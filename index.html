@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GB</title>
+	<style>
+		body{background-color: black; width: 800px; margin: auto;}
+		#myimg{margin: auto; display: block; position: absolute; margin-top: 100px; padding:  0px; width: 700px; height: 500px;}
+		#myb{width: 450px; height: 200px; position: absolute; left: 0px; }
+		#mya{width: 450px; height: 200px; position: absolute; right:0px;  top: 50px;}
+		#myd{width: 450px; height: 200px; position: absolute; left: 50px;  top: 450px;}
+		#myf{width: 450px; height: 150px; position: absolute; right: 50px;  top: 400px;}
+		#myl{width: 450px; height: 600px; position: absolute; right: 300px;  top: 100px; opacity: 0.7;}
+		#myi{width:320px; height: 240px; position: absolute; top: 50px;animation: flow 2s infinite alternate;}
+		@keyframes flow{
+			to{left: 00px;}
+			from{right: 0px;}}
+		#myy{width:500px; height: 600px; position: absolute; right: 50px; top: 250px;}
+		
+	</style>
+
+</head>
+<body >	
+	<div id="myy"></div>
+	<div id="myb"></div>
+	<div id="mya"></div>
+	<div id="myd"></div>
+	<div id="myf"></div>
+	<div id="myi"></div>
+<div id="myl"></div>
+	<img src="./gbb.png" id="myimg">
+	
+	<audio id="mysound"> <source src="gbgb.mp3" type="audio/mp3"></audio>
+
+	
+	<script type="text/javascript">
+		
+		myimg.onclick = function()
+			{myimg.src = "c.gif";
+			myb.style.background = "url('b.gif')";
+			mya.style.background = "url('a.gif')";
+			myd.style.background = "url('d.gif')";
+			myf.style.background = "url('f.gif')";
+			myl.style.background = "url('l.gif')";
+			myi.style.background = "url('i.gif')";
+			myy.style.background = "url('y.gif')";
+			mysound.play();
+
+			
+		}
+	
+	</script>
+</body>
+</html>
